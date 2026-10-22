@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Calculadora cient&#237;fica</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="Calculadora cientifica">
+    <header class="topbar">
+      <span class="brand-mark" aria-hidden="true">&#43;</span>
+      <span class="brand">Calculadora cientifica</span>
+      <button class="mode" id="angle-mode" type="button" aria-label="Cambiar unidad de angulo">DEG</button>
+    </header>
+    <section class="display" aria-live="polite" aria-atomic="true">
+      <div class="previous" id="previous"></div>
+      <output class="current" id="current" aria-label="Expresion y resultado">0</output>
+    </section>
+    <section class="keys" aria-label="Teclas de la calculadora">
+      <button class="key science" data-value="sin(" aria-label="Seno">sin</button>
+      <button class="key science" data-value="cos(" aria-label="Coseno">cos</button>
+      <button class="key science" data-value="tan(" aria-label="Tangente">tan</button>
+      <button class="key science" data-value="&#8730;(" aria-label="Raiz cuadrada">&#8730;</button>
+      <button class="key science" data-value="log(" aria-label="Logaritmo base 10">log</button>
+      <button class="key science" data-value="ln(" aria-label="Logaritmo natural">ln</button>
+      <button class="key science" data-value="^" aria-label="Potencia">x<sup>y</sup></button>
+      <button class="key science" data-value="!" aria-label="Factorial">n!</button>
+      <button class="key science" data-value="&#960;" aria-label="Pi">&#960;</button>
+      <button class="key science" data-value="e" aria-label="Numero e">e</button>
+      <button class="key science" data-value="(" aria-label="Abrir parentesis">(</button>
+      <button class="key science" data-value=")" aria-label="Cerrar parentesis">)</button>
+      <button class="key utility" data-action="clear" aria-label="Borrar todo">AC</button>
+      <button class="key utility" data-action="delete" aria-label="Borrar ultimo">&#9003;</button>
+      <button class="key utility" data-value="%" aria-label="Porcentaje">%</button>
+      <button class="key operator" data-value="&#247;" aria-label="Dividir">&#247;</button>
+      <button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button>
+      <button class="key operator" data-value="&#215;" aria-label="Multiplicar">&#215;</button>
+      <button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button>
+      <button class="key operator" data-value="&#8722;" aria-label="Restar">&#8722;</button>
+      <button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button>
+      <button class="key operator" data-value="+" aria-label="Sumar">+</button>
+      <button class="key utility" data-action="sign" aria-label="Cambiar signo">&#177;</button>
+      <button class="key" data-value="0">0</button><button class="key" data-value="," aria-label="Coma decimal">,</button>
+      <button class="key equals" data-action="equals" aria-label="Igual">=</button>
+    </section>
+    <footer>Trigonometr&#237;a, potencias y m&#225;s &#183; Entrada por teclado</footer>
+  </main>
+</body>
+</html>
